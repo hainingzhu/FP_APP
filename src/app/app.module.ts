@@ -20,7 +20,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ContactPage,
     ChatsPage,
     MePage,
-    GalleryPage
+    GalleryPage,
 	TabsPage,
   ],
   imports: [
