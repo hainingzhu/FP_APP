@@ -21,7 +21,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ChatsPage,
     MePage,
     GalleryPage,
-	TabsPage,
+	  TabsPage
   ],
   imports: [
     BrowserModule,
@@ -34,7 +34,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ContactPage,
     ChatsPage,
     MePage,
-    GalleryPage
+    GalleryPage,
+    TabsPage
   ],
   providers: [
     StatusBar,
