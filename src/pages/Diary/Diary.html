@@ -34,12 +34,25 @@
 				<ion-row>
 					<ion-col col-2>
 					</ion-col>
-					<ion-col col-1>
-						<ion-input type="number" placeholder="______"></ion-input>
+
+					<ion-col col-2>
+            <div>
+						<ion-input type="number" placeholder=""></ion-input>
+            </div>
 					</ion-col>
-					<ion-col col-3>
+
+					<ion-col col-2>
 						<p>Minutes</p>
 					</ion-col>
+
+          	<ion-col col-2>
+              <div><ion-input type="number" placeholder=""></ion-input></div>
+            </ion-col>
+
+          <ion-col col-4>
+            <p>Times per day</p>
+          </ion-col>
+
 				</ion-row>
 
 				<ion-row>
@@ -54,23 +67,121 @@
 					<ion-col col-2>
 					</ion-col>
 					<ion-col col-9>
-        		<ion-textarea placeholder="Enter a description ..." rows="5"></ion-textarea>
+        		<ion-textarea placeholder="  Enter a description ..." rows="5"></ion-textarea>
 					</ion-col>
 				</ion-row>
 
       </ion-grid>
 
-      <ion-item>
-      <ion-icon name='md-camera' item-start></ion-icon>
-      take selfies
-    </ion-item>
 
-    <ion-item>
-    <ion-icon name='md-videocam' item-start></ion-icon>
-    take videos
-  </ion-item>
+
+
+      <ion-grid>
+        <ion-row>
+          <ion-col col-2>
+            <ion-icon name='md-camera' item-start></ion-icon>
+          </ion-col>
+
+          <ion-col col-3>
+            <ion-img>
+              <img src="assets/imgs/RestingFace.png">
+            </ion-img>
+          </ion-col>
+
+          <ion-col col-3>
+            <ion-img>
+              <img src="assets/imgs/GentleSmiles.png">
+            </ion-img>
+          </ion-col>
+
+            <ion-col col-3>
+              <ion-img>
+                <img src="assets/imgs/showTeeth.png">
+              </ion-img>
+            </ion-col>
+        </ion-row>
+
+
+        <ion-row>
+          <ion-col col-2>
+          </ion-col>
+
+          <ion-col col-3>
+            <ion-img>
+              <img src="assets/imgs/eyebrow.png">
+            </ion-img>
+          </ion-col>
+
+          <ion-col col-3>
+            <ion-img>
+              <img src="assets/imgs/closeEyes.jpg">
+            </ion-img>
+          </ion-col>
+
+            <ion-col col-3>
+              <ion-img>
+                <img src="assets/imgs/closeEyesTightly.png">
+              </ion-img>
+            </ion-col>
+        </ion-row>
+
+
+
+        <ion-row>
+          <ion-col col-2>
+          </ion-col>
+
+          <ion-col col-3>
+            <ion-img>
+              <img src="assets/imgs/AngryFace.png">
+            </ion-img>
+          </ion-col>
+
+          <ion-col col-3>
+            <ion-img>
+              <img src="assets/imgs/PuckerLips.png">
+            </ion-img>
+          </ion-col>
+
+            <ion-col col-3>
+              <ion-img>
+                <img src="assets/imgs/wrinkling.png">
+              </ion-img>
+            </ion-col>
+        </ion-row>
+      </ion-grid>
+
+
+      <ion-grid>
+        <ion-row>
+          <ion-col col-2>
+            <ion-icon name='md-videocam' item-start></ion-icon>
+          </ion-col>
+
+
+
+
+
+          <ion-col col-3>
+            <button ion-button image-only>
+              <ion-img src="assets/imgs/eyebrow.png"></ion-img></button>
+          </ion-col>
+
+            <!--<ion-img>
+              <img src="assets/imgs/eyebrow.png">
+            </ion-img>
+          </ion-col>
+        -->
+
+          <ion-col col-3>
+            <ion-img>
+              <img src="assets/imgs/GentleSmiles.png">
+            </ion-img>
+          </ion-col>
+        </ion-row>
+  </ion-grid>
 
 </ion-list>
 <button ion-button clear>Cancel</button>
-<button ion-button color="secondary" float-right>Save</button>
+<button ion-button color="secondary" float-right>Post</button>
 </ion-content>
