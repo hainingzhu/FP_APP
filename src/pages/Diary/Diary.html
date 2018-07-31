@@ -9,20 +9,46 @@
 <ion-content padding>
   <ion-list>
 
-      <ion-item>
-        <ion-avatar item-start>
-          <img src="woman.svg">
-        </ion-avatar>
-        <ion-label> How long did you exercise today?</ion-label>
-        <ion-input type="number" placeholder="Number Input with no label"></ion-input>
-        <p padding-bottom> Minutes </p>
-        <h2 padding-bottom>How do you feel after exercise?</h2>
-      </ion-item>
+      <ion-grid>
+				<ion-row>
+					<ion-col col-1>
+          	<ion-avatar item-start>
+          	  <img src="assets/imgs/woman.svg">
+          	</ion-avatar>
+					</ion-col>
+					<ion-col col-6>
+      		  	<p>How long did you exercise today?</p>
+					</ion-col>
+				</ion-row>
 
-      <ion-item>
-        <ion-label>textarea</ion-label>
-        <ion-textarea></ion-textarea>
-      </ion-item>
+				<ion-row>
+					<ion-col col-1>
+					</ion-col>
+					<ion-col col-6>
+						<ion-input type="number" placeholder="How many minutes?"></ion-input>
+					</ion-col>
+					<ion-col col-3>
+						<p>Minutes</p>
+					</ion-col>
+				</ion-row>
+
+				<ion-row>
+					<ion-col col-1>
+					</ion-col>
+					<ion-col col-6>
+						<p>How do you feel after exercies?</p>
+					</ion-col>
+				</ion-row>
+
+				<ion-row>
+					<ion-col col-1>
+					</ion-col>
+					<ion-col col-6>
+        		<ion-textarea placeholder="Enter a description ..." rows="5"></ion-textarea>
+					</ion-col>
+				</ion-row>
+
+      </ion-grid>
 
       <ion-item>
       <ion-icon name='md-camera' item-start></ion-icon>
