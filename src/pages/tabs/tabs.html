@@ -1,6 +1,6 @@
-<ion-tabs>
+<ion-tabs color="hcolor" selectedIndex="4">
   <ion-tab [root]="tab1Root" tabTitle="Chats" tabIcon="md-chatboxes"></ion-tab>
-  <ion-tab [root]="tab2Root" tabTitle="Contact" tabIcon="md-contacts"></ion-tab>
+  <ion-tab [root]="tab2Root" tabTitle="Contact" tabIcon="md-contacts" [tabBadge]="invitationRequest.length"></ion-tab>
   <ion-tab [root]="tab3Root" tabTitle="Diary" tabIcon="md-clipboard"></ion-tab>
   <ion-tab [root]="tab4Root" tabTitle="Gallery" tabIcon="md-images"></ion-tab>
   <ion-tab [root]="tab5Root" tabTitle="Me" tabIcon="md-contact"></ion-tab>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1018480141608",
+    "firebase_url": "https://face-eef67.firebaseio.com",
+    "project_id": "face-eef67",
+    "storage_bucket": "face-eef67.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1018480141608:android:f4f7c6ee456daeb4",
+        "android_client_info": {
+          "package_name": "com.facestudio.emma"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1018480141608-2l1i78r9bcbc5t1hkuitmm2f4f10bj5c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.facestudio.emma",
+            "certificate_hash": "ac50e3c73b925343508cca2d2eec58d33d8fed0c"
+          }
+        },
+        {
+          "client_id": "1018480141608-udb939h9r57sqapo6i36ch2a6i5c4pc4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBoaGqTlS6X7cNHSYaBBxilY9C1jGfc20Y"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1018480141608-udb939h9r57sqapo6i36ch2a6i5c4pc4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

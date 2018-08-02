@@ -1,14 +1,17 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 @Component({
   selector: 'page-gallery',
-  templateUrl: 'Gallery.html'
+  templateUrl: 'gallery.html',
 })
-
 export class GalleryPage {
-  constructor(public navCtrl: NavController) {
 
+  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  }
+
+  ionViewDidLoad() {
+    console.log('ionViewDidLoad GalleryPage');
   }
 
 }

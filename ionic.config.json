@@ -1,8 +1,8 @@
 {
-  "name": "myApp",
+  "name": "facestudio",
   "integrations": {
     "cordova": {}
   },
   "type": "ionic-angular",
-  "pro_id": "55becc74"
+  "pro_id": "f6dc47a0"
 }

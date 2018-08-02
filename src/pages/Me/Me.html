@@ -1,49 +1,46 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>
-      Me
-    </ion-title>
-  </ion-navbar>
+
+    <ion-navbar>
+        <ion-title>Me</ion-title>
+    </ion-navbar>
+
 </ion-header>
+<ion-content>
+    <ion-list>
+        <ion-item>
+            <ion-thumbnail item-start>
+                <img src="{{ profile.profile_pic }}">
+            </ion-thumbnail>
+            <button ion-button color="secondary" (click)="getImage()">Change Profile Pic</button>
+        </ion-item>
 
-<ion-content padding>
-
-  <ion-list>
-
-    <ion-item>
-    <ion-img width="100" height="100" src="assets/imgs/woman.svg"></ion-img>
-    </ion-item>
-
-    <ion-item>
-    <ion-label color="primary" stacked>Full Name</ion-label>
-    <ion-input type="Name" placeholder="Full Name"></ion-input>
-  </ion-item>
-
-  <ion-item>
-    <ion-label color="primary" stacked>Phone Number</ion-label>
-    <ion-input type="phoneNumber" placeholder="Phone Number"></ion-input>
-  </ion-item>
-
-  <ion-item>
-    <ion-label color="primary" stacked>Occupation</ion-label>
-    <ion-input type="Occupation" placeholder="Occupation"></ion-input>
-  </ion-item>
-
-  <ion-item>
-    <ion-label color="primary" stacked>Gender</ion-label>
-    <ion-select [(ngModel)]="Gender">
-      <ion-option value="Male">Male</ion-option>
-      <ion-option value="Female">Female</ion-option>
-    </ion-select>
-  </ion-item>
-
-  <ion-item>
-    <ion-label color="primary" stacked>Age</ion-label>
-    <ion-input type="Age" placeholder="Age"></ion-input>
-  </ion-item>
-
-
-</ion-list>
-<button ion-button clear>Cancel</button>
-<button ion-button color="secondary" float-right>Save</button>
+        <ion-item>
+            <ion-label color="primary" stacked>Full Name</ion-label>
+            <ion-input type="text" [(ngModel)]="profile.name" name="title" placeholder="Full Name"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label color="primary" stacked>Face Studio Id</ion-label>
+            <ion-input [(ngModel)]="profile.facestudio_id" name="facestudio_id" readonly="true"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label color="primary" stacked>Occupation</ion-label>
+            <ion-input [(ngModel)]="profile.occupation" name="occupation" placeholder="Occupation"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label color="primary" stacked>Gender</ion-label>
+            <ion-select [(ngModel)]="profile.gender" name="gender">
+                <ion-option value="Male">Male</ion-option>
+                <ion-option value="Female">Female</ion-option>
+            </ion-select>
+        </ion-item>
+        <ion-item>
+            <ion-label color="primary" stacked>Age</ion-label>
+            <ion-input [(ngModel)]="profile.age" name="age" type="number" placeholder="Age"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label color="primary" stacked>Bio</ion-label>
+            <ion-textarea [(ngModel)]="profile.bio" name="bio" placeholder="Something about you !!"></ion-textarea>
+        </ion-item>
+        <button ion-button type="submit" (click)="saveProfile()" block>Save</button>
+    </ion-list>
 </ion-content>

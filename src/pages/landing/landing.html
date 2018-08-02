@@ -1,0 +1,21 @@
+<ion-content padding="true">
+    <ion-list>
+        <ion-item>
+            <ion-label>Name</ion-label>
+            <ion-input type="text" [(ngModel)]="profile.name" name="title"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label>Face Studio Id</ion-label>
+            <ion-input [(ngModel)]="profile.facestudio_id" name="facestudio_id" readonly="true"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label>Role</ion-label> 
+            <ion-select [(ngModel)]="profile.role">
+                <ion-option value="1">Patient</ion-option>
+                <ion-option value="2">Clincian</ion-option>
+                <ion-option value="3">Family And Friends</ion-option>
+              </ion-select>
+        </ion-item>
+        <button ion-button type="submit" (click)="saveProfile()" block>Save</button>
+    </ion-list>
+</ion-content>
