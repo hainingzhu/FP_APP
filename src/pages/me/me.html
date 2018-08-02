@@ -19,9 +19,19 @@
             <ion-input type="text" [(ngModel)]="profile.name" name="title" placeholder="Full Name"></ion-input>
         </ion-item>
         <ion-item>
-            <ion-label color="primary" stacked>Face Studio Id</ion-label>
+            <ion-label color="primary" stacked>Phone Number</ion-label>
             <ion-input [(ngModel)]="profile.facestudio_id" name="facestudio_id" readonly="true"></ion-input>
         </ion-item>
+
+        <ion-item>
+            <ion-label color="primary" stacked>Role</ion-label>
+            <ion-select [(ngModel)]="profile.role">
+                <ion-option value="1">Patient</ion-option>
+                <ion-option value="2">Clincian</ion-option>
+                <ion-option value="3">Family And Friends</ion-option>
+              </ion-select>
+        </ion-item>
+
         <ion-item>
             <ion-label color="primary" stacked>Occupation</ion-label>
             <ion-input [(ngModel)]="profile.occupation" name="occupation" placeholder="Occupation"></ion-input>
@@ -41,6 +51,7 @@
             <ion-label color="primary" stacked>Bio</ion-label>
             <ion-textarea [(ngModel)]="profile.bio" name="bio" placeholder="Something about you !!"></ion-textarea>
         </ion-item>
-        <button ion-button type="submit" (click)="saveProfile()" block>Save</button>
+        <button ion-button clear>Cancel</button>
+        <button ion-button color="secondary" float-right type="submit" (click)="saveProfile()">Save</button>
     </ion-list>
 </ion-content>
